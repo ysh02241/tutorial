@@ -28,8 +28,7 @@ def show(request):
     return render(
         request,
         'firstapp/show.html',
-        {'data':html},
-        {'curriculum':curriculum}
+        {'data':html, 'curriculum':curriculum}
     )
     #렌더(처음에 리쿼스트(무조건), 경로, 딕셔너리{}
     #딕셔너리의 키를 show 에 적어주면 템플릿에 전달됨
